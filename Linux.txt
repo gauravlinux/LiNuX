@@ -1,0 +1,148 @@
+Linux is a open-source Kernel not an  Operating system, based on Unix.
+Kernel is the core part of an OS, managing system resources and communication between hardware and software.
+It is known for its security,flexibility,low resource usage
+Created by Linus Torvalds in 1991
+Linux come from Linus + Unix
+Unix is licensed and Linux is Open-Sourced
+Kali,Ubuntu are known as Linux distribution (distros)
+Bare-Matel installation of linux distro, hypervisor installation of linux distro
+virtualization useCase:-
+cheap, reduce cost, free , easy backup using snapshot, easy recovery
+
+access Linux server/Remote server using Terminal/CMD/GitBash:-
+ssh kali@192.168.1.135
+
+Transfer files from PC to Linux server/Remote server:-
+using SCP [Secure Copy Protocol]
+scp desktop/Linux.txt Linux2.txt kali2@10.2.11.345:/usr/tmp/
+Transfer all files of a directory from PC to Linux server/Remote server:-
+using SCP [Secure Copy Protocol]
+scp * kali2@10.2.11.345:/usr/tmp/
+Transfer files from Linux server/Remote server to PC:-
+using SCP [Secure Copy Protocol]
+scp kali2@10.2.11.345:/usr/tmp/linux.txt desktop/
+If using a custom SSH port (e.g., 2222):
+scp -P 2222 user@192.168.1.100:/home/user/backup.sql /home/user/
+
+check the current location -> pwd
+display the name of current login user -> whoami
+find system date & time -> date
+display files and folder/directory in current location -> ls / ls -lt / ls -lh
+check permission of a file -> ls -ltr
+clear the terminal -> ctrl + L / clear
+display content of a file on terminal -> cat Linux.txt
+search a word in a file -> less Linux.txt -> /gaurav
+if there are multiple gaurav details and you want to scroll the press n to quit the file press q
+how to create a file -> touch Linux.txt
+how to delete a file -> rm Linux.txt
+how to edit a file in linux -> mousepad Linux.txt
+how to create a folder/directory -> mkdir Linux
+delete a directory -> rmdir Linux
+how to change directory -> cd kali/Linux/linux.txt
+how to go backward -> cd .. cd ../.. cd ../../..
+go to the home location/root directory instantaneously -> cd  
+copy file and paste from one folder to another -> cp /home/kali/Linux.txt /usr/temp
+cut or move file and paste from one folder to another -> mv /home/kali/Linux.txt /usr/temp
+copy content of a file in another file -> cp Linux.txt Linux2.txt
+rename a file -> mv Linux2.txt RenameLinux.txt
+how to read or display top 5 lines from a file -> head -5 Linux.txt
+how to read or display bottom 5 lines from a file -> tail -5 Linux.txt
+sort the content from a file -> sort Linux.txt
+reverse sort the content from a file -> sort -r Linux.txt
+display UNIQUE content from a file -> sort Linux.txt | uniq
+search a word and display matching content from a file -> grep "gaurav" Linux.txt
+search multiple word and siplay content from a file -> egrep "Linux|Linux2|Linux3" Linux.txt
+search a file with name start with Linux -> ls Linux*
+search a file with extension for a pdf,txt,jpeg -> ls *.pdf
+create 10 file -> touch Linux{1..10}.txt
+shuffle content of a file in linux -> shuf Linux.txt
+count no. of lines in a file -> wc -l Linux.txt
+find a file in Linux -> find ./ -name Linux.txt   # this search is case sensitive so check the file name properly
+find all pdf_file in Linux -> find ./ -name *.pdf
+find a file -> sudo updatedb -> locate Linux.txt
+how to check history of previously used commands in past -> history
+history | grep sort    / history | grep apt
+manual of every command -> man ls
+install application on linux -> sudo apt install gnome / dnf / yum
+how to list available packages to install on linux -> apt search nuclei
+find tool location -> which nuclei
+check application is installed or not on linux -> dpkg -l | grep nuclei / rpm -qa | grep nuclei / dnf list installed | grep mysql
+calender -> cal
+check how long server has been running -> uptime
+create a short-cut of a long command -> alias l="ls -ltr"
+compress a file -> gzip -k Linux.txt
+decompress a file -> gunzip -d Linux.txt.gz
+compress a folder/directory -> tar -czf LinuxFolder.tar.gz LinuxFolder/
+decompress a folder/directory -> tar -xzf LinuxFolder.tar.gz
+how to compress multiple file in one zipped file -> zip Linux.zip cat.txt dog.txt   result -> Linux.zip
+how to list files in zipped file -> unzip -l Linux.zip
+download file from internet -> wget www.gdrive.com/linux.txt
+you can change the name of the package which you want to download -> wget -O BlackHawk www.gdrive.com/linux.txt
+how to call an API on linux -> curl http://numbersapi.com/random
+start and stop a service on linux -> systemctl status ngnix / systemctl start ngnix / systemctl stop ngnix
+how to list all services on linux -> systemctl list-units --type=service -all
+list all existing environment variables on linux -> printenv
+temporarily add a new environment variables on linux -> export JAVA_HOME="/usr/lib/jvm/java-17" -> export PATH=$JAVA_HOME/bin:$PATH
+add a new environment variables permannently on linux -> source ~/.bashrc
+print a specific column from a CSV file -> awk -F , '{print $1,$2}' Linux.csv
+display starting two characters of all lines -> cut -c1-2 Linux.txt
+display a specific line from a file -> sed -n '5p' Linux.txt
+convert content of a file from uppercase to lowercase -> tr [:upper:] [:lower:] <Linux.txt 
+how to extend or shrink size of a file -> truncate -s 100M Linux.txt
+display text in terminal -> echo "Gaurav is learning Linux Commands"
+display text in vertical line in terminal -> echo "Gaurav is learning Linux Commands" | fold -w1
+how to change user or login as different user in linux -> su kali
+how to close or exit as current user -> exit
+
+permissions : u-user g-group o-other a-all
+modify permission of a file (give full permission) -> chmod 777 Linux.txt
+change ownership of a file -> chown kali Linux.txt
+change group ownership of a file -> chgrp kali Linux.txt
+
+check free ram space -> free -th
+check %memory and cpu utilization -> top
+disk availability or disk space -> df -h
+check disk utilization or specific folder space utilization -> du  / du -h newfolder/
+check hostname of linux server -> hostname
+check cpu/core/thread info of your linux server -> lscpu
+type of architecture(64 ,x86) of your linux server -> arch
+see the list of storage devices and disk partition on your server -> lsblk
+os name of linux server -> uname -a  /  cat /etc/os-release
+check if a process(python) is running or not -> ps -ef | grep python
+how to get PID of a process -> pgrep nginx
+stop a process by PID(8905) -> sudo kill -9 8905
+stop a process by name -> sudo pkill nginx
+see all the active jobs -> jobs
+resume a job in background -> bg
+run a bashscript -> bash Linux.sh
+check ip of your machine/server -> ifconfig / ifaddr
+check website/server is accessible or not -> ping www.google.com
+check if a IP:PORT is accessible and open or not -> telnet 198.168.34.5:22
+how to check if port is open or not on our server/pc -> netsat -putan | grep 80
+how to check all hubs in network path to reach a website -> traceroute www.google.com
+restart linux server -> reboot
+shutdown linux server -> shutdown
+create a new user on our linux server -> useradd Gaurav -> passwd 123456789
+delete a user -> sudo userdel gaurav
+how to schedule a script to run on a particular date/time -> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
