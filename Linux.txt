@@ -27,7 +27,7 @@ scp -P 2222 user@192.168.1.100:/home/user/backup.sql /home/user/
 check the current location -> pwd
 display the name of current login user -> whoami
 find system date & time -> date
-display files and folder/directory in current location -> ls / ls -lt / ls -lh
+display files and folder/directory in current location -> ls / ls -lt / ls -lh / ls -ld
 check permission of a file -> ls -ltr
 clear the terminal -> ctrl + L / clear
 display content of a file on terminal -> cat Linux.txt
