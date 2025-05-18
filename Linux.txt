@@ -133,10 +133,12 @@ basically used for cyber security, admin roles, troubleshooting roles like shows
 location of log file -> cd /var/log -> ls
 log file : 
 boot [Purpose: Shows messages related to the system startup (booting process)]
-chron []
-secure []
-maillog []
-httpd []
+cron [Useful for tracking if automated tasks (like backups or scripts) ran at the scheduled time.]
+secure [Purpose: Logs security-related events like login attempts, sudo usage, and SSH access.
+Use: Helps track unauthorized access or failed login attempts.]
+maillog [Purpose: Logs activities of the mail server (like sendmail or postfix).]
+httpd [Purpose: Contains logs for the Apache HTTP server (httpd).
+Use: Tracks web server access, errors, and other Apache-related activities.]
 messages []
 
 
