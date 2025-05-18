@@ -126,7 +126,18 @@ create a new user on our linux server -> useradd Gaurav -> passwd 123456789
 delete a user -> sudo userdel gaurav
 how to schedule a script to run on a particular date/time -> 
 
-
+Log analysis:-
+a log file store events, processes, messages, and other data from applications, OS, or devices. 
+they provide information based on the actions performed by users, playing an important role in monitoring.
+basically used for cyber security, admin roles, troubleshooting roles like shows error code.
+location of log file -> cd /var/log -> ls
+log file : 
+boot [Purpose: Shows messages related to the system startup (booting process)]
+chron []
+secure []
+maillog []
+httpd []
+messages []
 
 
 
