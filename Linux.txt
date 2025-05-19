@@ -27,7 +27,7 @@ scp -P 2222 user@192.168.1.100:/home/user/backup.sql /home/user/
 check the current location -> pwd
 display the name of current login user -> whoami
 find system date & time -> date
-display files and folder/directory in current location -> ls / ls -lt / ls -lh / ls -ld
+display files and folder/directory in current location -> ls / ls -lt / ls -lh / ls -ld / ls -l / ls -a / ls -al
 check permission of a file -> ls -ltr
 clear the terminal -> ctrl + L / clear
 display content of a file on terminal -> cat Linux.txt
@@ -125,6 +125,7 @@ shutdown linux server -> shutdown
 create a new user on our linux server -> useradd Gaurav -> passwd 123456789
 delete a user -> sudo userdel gaurav
 how to schedule a script to run on a particular date/time -> 
+
 
 Log analysis:-
 a log file store events, processes, messages, and other data from applications, OS, or devices. 
