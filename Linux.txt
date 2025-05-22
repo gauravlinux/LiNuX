@@ -201,7 +201,13 @@ From most critical to least:
 6 - Informational
 7 - Debug
 
-
+Example of a syslog Entry
+May 22 10:15:00 kali sshd[1024]: Accepted password for user from 192.168.1.10 port 45678 ssh2
+Explanation:
+Date and time: May 22 10:15:00
+Hostname: kali
+Service: sshd
+Message: User logged in using password from IP 192.168.1.10
 
 
 
