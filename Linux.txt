@@ -155,6 +155,51 @@ messages [Purpose: A general-purpose system log file that stores messages from m
 
 
 
+Syslog:-
+Syslog (System Logging Protocol) is a standard protocol for computer logging that allows devices and applications to send log messages to a central location for analysis and monitoring. It's widely used in Unix-like systems and networking devices to track system events, errors, and performance. Syslog facilitates centralized log management and provides insights into system health and security. 
+Main Purpose of syslog
+To record important events happening inside the system—such as logins, errors, warnings, boot info, and service activity—so that system administrators can monitor and troubleshoot issues.
+
+Use Cases of syslog
+Detect unauthorized access attempts
+Monitor system health
+Debug errors in applications
+Track cron job execution
+Review system reboots or shutdowns
+
+The log file is usually located at:
+/var/log/syslog
+On Red Hat-based systems (RHEL, CentOS, Fedora), you may not see /var/log/syslog; instead, logs go to:
+/var/log/messages
+/var/log/secure
+
+What Information Does syslog Contain?
+It collects logs from:
+The kernel
+System services (e.g., cron, sshd)
+Startup scripts
+Network issues
+Hardware events
+Applications that use the syslog facility
+
+How syslog Works (Behind the Scenes)
+Services or applications generate messages.
+These messages are passed to the syslog daemon (e.g., rsyslog, syslog-ng, or journald).
+The daemon sorts the messages based on:
+Facility: The type of program (auth, mail, daemon, etc.)
+Severity Level: From debug to emergency
+The messages are then saved to a log file, sent to a remote server, or displayed on-screen.
+
+Severity Levels in syslog
+From most critical to least:
+0 - Emergency (System unusable)
+1 - Alert
+2 - Critical
+3 - Error
+4 - Warning
+5 - Notice
+6 - Informational
+7 - Debug
 
 
 
