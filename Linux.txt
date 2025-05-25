@@ -297,6 +297,7 @@ journalctl -u sshd	            Logs from SSH service
 journalctl --since "1 hour ago"	Logs from the last hour
 journalctl -n >> /root/Desktop/log.txt   Shows the last 10 log entries from the system journal. Use -n 50 for 50 lines, etc. & Appends the output to a file
 journalctl -p err                        View logs by priority (errors only)
+journalctl -p warning                    shows warning logs
 journalctl --since "2025-05-20"          View logs for a specific date
 journalctl -f                            View real-time log updates (like tail -f)
 
