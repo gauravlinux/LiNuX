@@ -237,7 +237,28 @@ File or object accessed
 Result (success or failed)
 Source IP or terminal
 
+Example of an Audit Log Entry
+type=SYSCALL msg=audit(1716358455.123:421): user pid=1092 uid=1000 auid=1000 cmd="/bin/cat /etc/passwd"
+Meaning:
+A user with UID 1000 ran the cat command on /etc/passwd.
+It happened at a specific time and was recorded by the audit system.
 
+How to Set Up Audit Logs in Linux
+Install audit daemon (if not already):
+sudo apt install auditd  # Debian/Ubuntu
+sudo yum install audit   # RHEL/CentOS
+
+Start and enable the service:
+sudo systemctl start auditd
+sudo systemctl enable auditd
+
+Add audit rules:
+Example – log access to /etc/passwd:
+
+sudo auditctl -w /etc/passwd -p rwxa -k passwd-watch
+-w: Watch file
+-p: Permissions (read, write, execute, attribute change)
+-k: Add a tag for easy search
 
 
 
