@@ -295,6 +295,7 @@ journalctl -b	                  Logs from current boot
 journalctl -f	                  Live view (like tail -f)
 journalctl -u sshd	            Logs from SSH service
 journalctl --since "1 hour ago"	Logs from the last hour
+journalctl -n >> /root/Desktop/log.txt   Shows the last 10 log entries from the system journal. Use -n 50 for 50 lines, etc. & Appends the output to a file
 
 Enable Persistent Journaling
 sudo mkdir -p /var/log/journal
