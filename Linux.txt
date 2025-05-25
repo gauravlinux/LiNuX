@@ -264,7 +264,9 @@ sudo auditctl -w /etc/passwd -p rwxa -k passwd-watch
 
 
 What is Journal in Linux?
-The journal in Linux refers to the system log managed by systemd-journald, the logging service of the systemd system manager. It collects and stores log messages from:
+The journal in Linux refers to the system log managed by systemd-journald, the logging service of the systemd system manager.
+The Linux journal is a modern logging system that provides centralized, searchable, structured, and optionally persistent logs using the systemd-journald service.
+It collects and stores log messages from:
 The Linux kernel
 System services (like SSH, NetworkManager)
 User processes and applications
@@ -293,5 +295,12 @@ journalctl -b	                  Logs from current boot
 journalctl -f	                  Live view (like tail -f)
 journalctl -u sshd	            Logs from SSH service
 journalctl --since "1 hour ago"	Logs from the last hour
+
+Enable Persistent Journaling
+sudo mkdir -p /var/log/journal
+sudo systemctl restart systemd-journald
+
+
+
 
 
