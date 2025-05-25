@@ -216,10 +216,26 @@ tail -f /var/log/syslog → See real-time logs
 
 
 
+Audit Log:-
+An audit log is a record of actions performed on a system, showing who did what, when, and how. It helps in tracking security-relevant events such as user logins, file changes, command executions, and permission modifications.
 
+Main Purpose of Audit Logs
+Monitor user and system activity
+Detect suspicious or unauthorized actions
+Comply with security standards (like PCI-DSS, HIPAA)
+Help in digital forensics and investigations
 
+Linux uses the Audit daemon (auditd) to maintain audit logs.
+Log file location: /var/log/audit/audit.log
 
-
+What Does an Audit Log Contain?
+Each entry usually shows:
+Time and date
+User ID (UID)
+Command or action
+File or object accessed
+Result (success or failed)
+Source IP or terminal
 
 
 
