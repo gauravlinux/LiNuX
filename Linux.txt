@@ -15,9 +15,11 @@ ssh kali@192.168.1.135
 Transfer files from PC to Linux server/Remote server:-
 using SCP [Secure Copy Protocol]
 scp desktop/Linux.txt Linux2.txt kali2@10.2.11.345:/usr/tmp/
+
 Transfer all files of a directory from PC to Linux server/Remote server:-
 using SCP [Secure Copy Protocol]
 scp * kali2@10.2.11.345:/usr/tmp/
+
 Transfer files from Linux server/Remote server to PC:-
 using SCP [Secure Copy Protocol]
 scp kali2@10.2.11.345:/usr/tmp/linux.txt desktop/
