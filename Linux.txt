@@ -155,17 +155,17 @@ add a new environment variables permannently on linux -> source ~/.bashrc
 print a specific column from a CSV file -> awk -F , '{print $1,$2}' Linux.csv
 display starting two characters of all lines -> cut -c1-2 Linux.txt
 display a specific line from a file -> sed -n '5p' Linux.txt
-convert content of a file from uppercase to lowercase -> tr [:upper:] [:lower:] <Linux.txt 
-how to extend or shrink size of a file -> truncate -s 100M Linux.txt
-display text in terminal -> echo "Gaurav is learning Linux Commands"
-display text in vertical line in terminal -> echo "Gaurav is learning Linux Commands" | fold -w1
-how to change user or login as different user in linux -> su kali
-how to close or exit as current user -> exit
+tr [:upper:] [:lower:] <Linux.txt        -> convert content of a file from uppercase to lowercase
+truncate -s 100M Linux.txt               -> how to extend or shrink size of a file 
+echo "Gaurav is learning Linux Commands" -> display text in terminal 
+echo "Gaurav is learning Linux Commands" | fold -w1 -> display text in vertical line in terminal 
+su kali                          -> how to change user or login as different user in linux 
+exit                             -> how to close or exit as current user 
 
 permissions : u-user g-group o-other a-all
-modify permission of a file (give full permission) -> chmod 777 Linux.txt
-change ownership of a file -> chown kali Linux.txt
-change group ownership of a file -> chgrp kali Linux.txt
+chmod 777 Linux.txt              -> modify permission of a file (give full permission) 
+chown kali Linux.txt             -> change ownership of a file 
+chgrp kali Linux.txt             -> change group ownership of a file 
 
 free -th                         -> check free ram space 
 top                              -> check %memory and cpu utilization 
