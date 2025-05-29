@@ -47,6 +47,33 @@ vfat: Compatibility layer for FAT filesystems, often used in USB drives and exte
 NFS: Network File System, used to share files over a network.
 Understanding the strengths and weaknesses of each filesystem type is crucial when designing storage solutions for different environments.
 
+Important Directories and Their Purposes
+Each directory in the Linux filesystem has a specific role. Here’s a deeper look into some of the most critical directories:
+
+/ (Root Directory): The starting point of the filesystem. All other directories and files branch off from here.
+/bin: Contains essential command binaries needed for the system to function in single-user mode. These are available to all users.
+/sbin: Similar to /bin, but contains system binaries that are typically used by the root user for administrative tasks.
+/lib: Contains shared libraries required by the binaries in /bin and /sbin.
+/usr: A secondary hierarchy that contains user programs, libraries, documentation, and more. It’s split into subdirectories like /usr/bin, /usr/sbin, and /usr/lib.
+/var: Stores variable data like logs, databases, and spools. This directory often grows in size over time.
+/etc: The nerve center for system configuration files. Nearly every service or application has a configuration file located here.
+/home: Contains personal directories for each user. This is where users store their personal files and directories.
+/proc: A virtual filesystem that provides an interface to kernel data structures. It’s used to access process information, kernel parameters, and more.
+/dev: Contains device files that represent hardware components. These files act as interfaces to the corresponding hardware.
+
+File Permissions and Ownership
+Linux employs a robust permissions system that controls access to files and directories. Each file has three sets of permissions for the owner, the group, and others:
+Read (r): Permission to read the contents of the file.
+Write (w): Permission to modify the file.
+Execute (x): Permission to execute the file as a program.
+Permissions are represented by a combination of letters (r, w, x) or their corresponding octal numbers (4 for read, 2 for write, 1 for execute).
+
+For example, the permission rwxr-xr-- means:
+Owner: Read, write, execute
+Group: Read, execute
+Others: Read only
+Understanding and managing permissions is crucial for maintaining system security and ensuring that users have appropriate access levels.
+
 
 access Linux server/Remote server using Terminal/CMD/GitBash:-
 ssh kali@192.168.1.135
@@ -166,7 +193,8 @@ shutdown linux server -> shutdown
 create a new user on our linux server -> useradd Gaurav -> passwd 123456789
 delete a user -> sudo userdel gaurav
 how to schedule a script to run on a particular date/time -> 
-
+mount /dev/sdb1 /mnt -> Mount Command: Used to attach a filesystem to a specified directory.
+umount /mnt -> Unmount Command: Used to detach a filesystem from the directory tree.
 
 Log analysis:-
 a log file store events, processes, messages, and other data from applications, OS, or devices. 
