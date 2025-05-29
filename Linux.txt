@@ -167,23 +167,23 @@ modify permission of a file (give full permission) -> chmod 777 Linux.txt
 change ownership of a file -> chown kali Linux.txt
 change group ownership of a file -> chgrp kali Linux.txt
 
-check free ram space -> free -th
-check %memory and cpu utilization -> top
-disk availability or disk space -> df -h
-check disk utilization or specific folder space utilization -> du  / du -h newfolder/
-check hostname of linux server -> hostname
-check cpu/core/thread info of your linux server -> lscpu
-type of architecture(64 ,x86) of your linux server -> arch
-see the list of storage devices and disk partition on your server -> lsblk
-os name of linux server -> uname -a  /  cat /etc/os-release
-check if a process(python) is running or not -> ps -ef | grep python
-how to get PID of a process -> pgrep nginx
-stop a process by PID(8905) -> sudo kill -9 8905
-stop a process by name -> sudo pkill nginx
-see all the active jobs -> jobs
-resume a job in background -> bg
-run a bashscript -> bash Linux.sh
-check ip of your machine/server -> ifconfig / ifaddr
+free -th      -> check free ram space 
+top           -> check %memory and cpu utilization 
+df -h         -> disk availability or disk space 
+du  / du -h newfolder/ -> check disk utilization or specific folder space utilization 
+hostname      -> check hostname of linux server 
+lscpu         -> check cpu/core/thread info of your linux server 
+arch          -> type of architecture(64 ,x86) of your linux server
+lsblk         -> see the list of storage devices and disk partition on your server 
+uname -a  /  cat /etc/os-release -> os name of linux server 
+ps -ef | grep python             -> check if a process(python) is running or not 
+pgrep nginx                      -> how to get PID of a process 
+sudo kill -9 8905                -> stop a process by PID(8905) 
+sudo pkill nginx                 -> stop a process by name 
+jobs                             -> see all the active jobs
+bg                               -> resume a job in background
+bash Linux.sh                    -> run a bashscript
+check ip of your machine/server  -> ifconfig / ifaddr
 check website/server is accessible or not -> ping www.google.com
 check if a IP:PORT is accessible and open or not -> telnet 198.168.34.5:22
 how to check if port is open or not on our server/pc -> netsat -putan | grep 80
