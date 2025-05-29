@@ -39,8 +39,8 @@ The root directory (/) serves as the starting point of the filesystem. Key subdi
 Key Filesystem Types in Linux
 Linux supports various filesystem types, each suited for different use cases. Some of the most common include:
 
-Ext4: The most widely used filesystem in Linux, known for its balance of performance, reliability, and features.
-XFS: High-performance filesystem with robust scalability, often used in enterprise environments.
+Ext4: The most widely used filesystem in Linux, known for its balance of performance, reliability, and features. good for small files, use in ubuntu, kali
+XFS: High-performance filesystem with robust scalability, often used in enterprise environments. good for large files, use in fedora, cent, rhel
 Btrfs: A newer filesystem designed for fault tolerance, repair, and easy administration.
 ZFS: Known for data integrity and scalability, commonly used in storage solutions.
 vfat: Compatibility layer for FAT filesystems, often used in USB drives and external devices.
