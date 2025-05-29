@@ -108,7 +108,8 @@ how to create a folder/directory -> mkdir Linux
 delete a directory -> rmdir Linux
 how to change directory -> cd kali/Linux/linux.txt
 how to go backward -> cd .. cd ../.. cd ../../..
-go to the home location/root directory instantaneously -> cd  
+go to the home location/directory instantaneously -> cd  
+cd / -> go to the root directory instantaneously
 copy file and paste from one folder to another -> cp /home/kali/Linux.txt /usr/temp
 cut or move file and paste from one folder to another -> mv /home/kali/Linux.txt /usr/temp
 copy content of a file in another file -> cp Linux.txt Linux2.txt
