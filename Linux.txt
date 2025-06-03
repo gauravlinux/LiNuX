@@ -148,14 +148,14 @@ how to list files in zipped file -> unzip -l Linux.zip
 download file from internet -> wget www.gdrive.com/linux.txt
 you can change the name of the package which you want to download -> wget -O BlackHawk www.gdrive.com/linux.txt
 how to call an API on linux -> curl http://numbersapi.com/random
-start and stop a service on linux -> systemctl status ngnix / systemctl start ngnix / systemctl stop ngnix
-how to list all services on linux -> systemctl list-units --type=service -all
-list all existing environment variables on linux -> printenv
-temporarily add a new environment variables on linux -> export JAVA_HOME="/usr/lib/jvm/java-17" -> export PATH=$JAVA_HOME/bin:$PATH
-add a new environment variables permannently on linux -> source ~/.bashrc
-print a specific column from a CSV file -> awk -F , '{print $1,$2}' Linux.csv
-display starting two characters of all lines -> cut -c1-2 Linux.txt
-display a specific line from a file -> sed -n '5p' Linux.txt
+systemctl status ngnix, systemctl start ngnix, systemctl stop ngnix           -> start and stop a service on linux 
+systemctl list-units --type=service -all      -> how to list all services on linux 
+printenv                                 -> list all existing environment variables on linux 
+export JAVA_HOME="/usr/lib/jvm/java-17" -> export PATH=$JAVA_HOME/bin:$PATH   -> temporarily add a new environment variables on linux 
+source ~/.bashrc                         -> add a new environment variables permannently on linux 
+awk -F , '{print $1,$2}' Linux.csv       -> print a specific column from a CSV file 
+cut -c1-2 Linux.txt                      -> display starting two characters of all lines
+sed -n '5p' Linux.txt                    -> display a specific line from a file 
 tr [:upper:] [:lower:] <Linux.txt        -> convert content of a file from uppercase to lowercase
 truncate -s 100M Linux.txt               -> how to extend or shrink size of a file 
 echo "Gaurav is learning Linux Commands" -> display text in terminal 
