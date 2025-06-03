@@ -134,23 +134,23 @@ history | grep sort    / history | grep apt
 manual of every command -> man ls
 install application on linux -> sudo apt install gnome / dnf / yum
 how to list available packages to install on linux -> apt search nuclei
-find tool location -> which nuclei
-check application is installed or not on linux -> dpkg -l | grep nuclei / rpm -qa | grep nuclei / dnf list installed | grep mysql
-calender -> cal
-check how long server has been running -> uptime
-create a short-cut of a long command -> alias l="ls -ltr"
-compress a file -> gzip -k Linux.txt
-decompress a file -> gunzip -d Linux.txt.gz
-compress a folder/directory -> tar -czf LinuxFolder.tar.gz LinuxFolder/
-decompress a folder/directory -> tar -xzf LinuxFolder.tar.gz
-how to compress multiple file in one zipped file -> zip Linux.zip cat.txt dog.txt   result -> Linux.zip
-how to list files in zipped file -> unzip -l Linux.zip
-download file from internet -> wget www.gdrive.com/linux.txt
-you can change the name of the package which you want to download -> wget -O BlackHawk www.gdrive.com/linux.txt
-how to call an API on linux -> curl http://numbersapi.com/random
+which nuclei                                                                              -> find tool location 
+dpkg -l | grep nuclei / rpm -qa | grep nuclei / dnf list installed | grep mysql           -> check application is installed or not on linux 
+cal                                                                    -> calender 
+uptime                                                                 -> check how long server has been running 
+alias l="ls -ltr"                                                      -> create a short-cut of a long command 
+gzip -k Linux.txt                                                      -> compress a file 
+gunzip -d Linux.txt.gz                                                 -> decompress a file 
+tar -czf LinuxFolder.tar.gz LinuxFolder/                               -> compress a folder/directory
+tar -xzf LinuxFolder.tar.gz                                            -> decompress a folder/directory 
+zip Linux.zip cat.txt dog.txt   result -> Linux.zip                    -> how to compress multiple file in one zipped file 
+unzip -l Linux.zip                                                     -> how to list files in zipped file
+wget www.gdrive.com/linux.txt                                          -> download file from internet 
+wget -O BlackHawk www.gdrive.com/linux.txt                             -> you can change the name of the package which you want to download 
+curl http://numbersapi.com/random                                      -> how to call an API on linux 
 systemctl status ngnix, systemctl start ngnix, systemctl stop ngnix           -> start and stop a service on linux 
-systemctl list-units --type=service -all      -> how to list all services on linux 
-printenv                                 -> list all existing environment variables on linux 
+systemctl list-units --type=service -all                                      -> how to list all services on linux 
+printenv                                                                      -> list all existing environment variables on linux 
 export JAVA_HOME="/usr/lib/jvm/java-17" -> export PATH=$JAVA_HOME/bin:$PATH   -> temporarily add a new environment variables on linux 
 source ~/.bashrc                         -> add a new environment variables permannently on linux 
 awk -F , '{print $1,$2}' Linux.csv       -> print a specific column from a CSV file 
