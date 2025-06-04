@@ -92,12 +92,12 @@ scp kali2@10.2.11.345:/usr/tmp/linux.txt desktop/
 If using a custom SSH port (e.g., 2222):
 scp -P 2222 user@192.168.1.100:/home/user/backup.sql /home/user/
 
-check the current location -> pwd
-display the name of current login user -> whoami
-find system date & time -> date
-display files and folder/directory in current location -> ls / ls -lt / ls -lh / ls -ld / ls -l / ls -a / ls -al
-check permission of a file -> ls -ltr
-clear the terminal -> ctrl + L / clear
+pwd                                                            -> check the current location 
+whoami                                                         -> display the name of current login user 
+date                                                           -> find system date & time 
+ls / ls -lt / ls -lh / ls -ld / ls -l / ls -a / ls -al         -> display files and folder/directory in current location 
+ls -ltr                                                        -> check permission of a file 
+ctrl + L, clear                                                -> clear the terminal 
 cat Linux.txt                                                  -> display content of a file on terminal 
 less Linux.txt -> /gaurav                                      -> search a word in a file
 if there are multiple gaurav details and you want to scroll the press n to quit the file press q
