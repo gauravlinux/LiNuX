@@ -114,21 +114,21 @@ copy file and paste from one folder to another -> cp /home/kali/Linux.txt /usr/t
 cut or move file and paste from one folder to another -> mv /home/kali/Linux.txt /usr/temp
 copy content of a file in another file -> cp Linux.txt Linux2.txt
 rename a file -> mv Linux2.txt RenameLinux.txt
-how to read or display top 5 lines from a file -> head -5 Linux.txt
-how to read or display bottom 5 lines from a file -> tail -5 Linux.txt
-sort the content from a file -> sort Linux.txt
-reverse sort the content from a file -> sort -r Linux.txt
-display UNIQUE content from a file -> sort Linux.txt | uniq
-search a word and display matching content from a file -> grep "gaurav" Linux.txt
-search multiple word and siplay content from a file -> egrep "Linux|Linux2|Linux3" Linux.txt
-search a file with name start with Linux -> ls Linux*
-search a file with extension for a pdf,txt,jpeg -> ls *.pdf
-create 10 file -> touch Linux{1..10}.txt
-shuffle content of a file in linux -> shuf Linux.txt
-count no. of lines in a file -> wc -l Linux.txt
-find a file in Linux -> find ./ -name Linux.txt   # this search is case sensitive so check the file name properly
-find all pdf_file in Linux -> find ./ -name *.pdf
-sudo updatedb -> locate Linux.txt                                                   -> find a file 
+head -5 Linux.txt                                              -> how to read or display top 5 lines from a file 
+tail -5 Linux.txt                                              -> how to read or display bottom 5 lines from a file 
+sort Linux.txt                                                 -> sort the content from a file 
+sort -r Linux.txt                                              -> reverse sort the content from a file 
+sort Linux.txt | uniq                                          -> display UNIQUE content from a file 
+grep "gaurav" Linux.txt                                        -> search a word and display matching content from a file 
+egrep "Linux|Linux2|Linux3" Linux.txt                          -> search multiple word and siplay content from a file 
+ls Linux*                                                      -> search a file with name start with Linux 
+ls *.pdf                                                       -> search a file with extension for a pdf,txt,jpeg 
+touch Linux{1..10}.txt                                         -> create 10 file 
+shuf Linux.txt                                                 -> shuffle content of a file in linux 
+wc -l Linux.txt                                                -> count no. of lines in a file 
+find ./ -name Linux.txt                                        -> find a file in Linux   # this search is case sensitive so check the file name properly
+find ./ -name *.pdf                                            -> find all pdf_file in Linux 
+sudo updatedb -> locate Linux.txt                              -> find a file 
 history, history | grep sort, history | grep apt                                    -> how to check history of previously used commands in past 
 man ls                                                                              -> manual of every command 
 sudo apt install gnome / dnf / yum                                                  -> install application on linux 
