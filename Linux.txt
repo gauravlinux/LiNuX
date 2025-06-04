@@ -98,22 +98,22 @@ find system date & time -> date
 display files and folder/directory in current location -> ls / ls -lt / ls -lh / ls -ld / ls -l / ls -a / ls -al
 check permission of a file -> ls -ltr
 clear the terminal -> ctrl + L / clear
-display content of a file on terminal -> cat Linux.txt
-search a word in a file -> less Linux.txt -> /gaurav
+cat Linux.txt                                                  -> display content of a file on terminal 
+less Linux.txt -> /gaurav                                      -> search a word in a file
 if there are multiple gaurav details and you want to scroll the press n to quit the file press q
-how to create a file -> touch Linux.txt
-how to delete a file -> rm Linux.txt
-how to edit a file in linux -> mousepad Linux.txt
-how to create a folder/directory -> mkdir Linux
-delete a directory -> rmdir Linux
-how to change directory -> cd kali/Linux/linux.txt
-how to go backward -> cd .. cd ../.. cd ../../..
-go to the home location/directory instantaneously -> cd  
-cd / -> go to the root directory instantaneously
-copy file and paste from one folder to another -> cp /home/kali/Linux.txt /usr/temp
-cut or move file and paste from one folder to another -> mv /home/kali/Linux.txt /usr/temp
-copy content of a file in another file -> cp Linux.txt Linux2.txt
-rename a file -> mv Linux2.txt RenameLinux.txt
+touch Linux.txt                                                -> how to create a file 
+rm Linux.txt                                                   -> how to delete a file 
+mousepad Linux.txt                                             -> how to edit a file in linux 
+mkdir Linux                                                    -> how to create a folder/directory 
+rmdir Linux                                                    -> delete a directory 
+cd kali/Linux/linux.txt                                        -> how to change directory 
+cd .. cd ../.. cd ../../..                                     -> how to go backward 
+cd                                                             -> go to the home location/directory instantaneously   
+cd /                                                           -> go to the root directory instantaneously
+cp /home/kali/Linux.txt /usr/temp                              -> copy file and paste from one folder to another 
+mv /home/kali/Linux.txt /usr/temp                              -> cut or move file and paste from one folder to another 
+cp Linux.txt Linux2.txt                                        -> copy content of a file in another file 
+mv Linux2.txt RenameLinux.txt                                  -> rename a file 
 head -5 Linux.txt                                              -> how to read or display top 5 lines from a file 
 tail -5 Linux.txt                                              -> how to read or display bottom 5 lines from a file 
 sort Linux.txt                                                 -> sort the content from a file 
